@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="{% static 'css/index.css'%}">
+</head>
+
+<body>
+    <div class="head">
+        <img src="{% static 'images/logo.png'  %}" style="width:3em; margin-bottom: 0%;">
+        BETELGEUSE RESTAURANTS
+    </div>
+    <nav class="homenav">
+        <li><a href="index">home</a></li>
+        <li><a href="menupage">menu-items</a></li>
+    </nav>
+    <div class="header">
+        Payments
+    </div>
+    <div>
+        <!--total amount-->
+        <div class="total">
+            <div class="total-amount">
+                <div class="total-amount-text">
+                    Total Amount: 
+                </div>
+                <div class="total-amount-value">
+                    <?php
+                    $total = 0;
+                    foreach ($cart as $item) {
+                        $total += $item['price'] * $item['quantity'];
+                    }
+    </div>
+    <!--payement-->
+    <div class="paymethods">
+        <div id="upi">
+            <div>UPI
+                <div class="upi-input">
+                    <input type="text" placeholder="UPI ID" id="upi-id">
+            
+            <button type="submit"><a href="sucess">PAY</a></button>
+            </div>
+        </div>
+        <div id="upi">
+            <div>Internet Banking
+                <div class="upi-input">
+                    <input type="text" placeholder="Bank Name" id="bank-name">
+                    <input type="text" placeholder="Account Number" id="account-number">
+            
+            <button type="submit"><a href="sucess">PAY</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

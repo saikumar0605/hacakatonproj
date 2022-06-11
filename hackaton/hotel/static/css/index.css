@@ -1,0 +1,181 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.head {
+    background-color: gray;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    color: black;
+    font-size: 2em;
+    text-align: center;
+}
+
+.containerlog {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-page {
+    max-width: 50%;
+    margin-top: 2%;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    font-style: normal;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-page buttton:link {
+    background-color: rgb(72, 107, 202);
+}
+
+.login-page button:hover {
+    background-color: rgb(32, 83, 224);
+}
+
+.homenav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+    background-color: rgb(72, 107, 202);
+}
+
+.homenav li {
+    padding: 10px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.homenav li:hover {
+    background-color: rgb(32, 83, 224);
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.inprod {
+    text-align: center;
+    font-size: larger;
+    width: 100%;
+    background-color: rgb(72, 107, 202);
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+.footer {
+    background-color: rgb(72, 107, 202);
+    display: flex;
+    flex-direction: row;
+}
+
+.footer h1 {
+    padding: 30px;
+}
+
+.footer div {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px;
+    font-size: 2em;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+}
+
+.products div {
+    padding-right: 10px;
+    margin: 20px;
+}
+
+#f1 {
+    width: 200px;
+    height: 150px;
+}
+
+#f {
+    height: 200px;
+    width: 200px;
+}
+
+#proceed {
+    display: flex;
+    justify-content: center;
+
+}
+
+#proceed button {
+    margin-top: 1%;
+    background-color: rgb(72, 107, 202);
+    width: 200px;
+    height: 3em;
+    font-size: larger;
+}
+
+#proceed button:hover {
+    background-color: rgb(32, 83, 224);
+}
+
+#proceed button:active {
+    background-color: green;
+}
+
+
+#upi div:hover {
+    background-color: dimgray;
+}
+
+#upi button {
+    width: 100px;
+    height: 75px;
+    background-color: rgb(72, 107, 202);
+}
+
+#upi button:hover {
+    background-color: rgb(32, 83, 224);
+}
+
+#upi button:active {
+    background-color: green;
+}
+#upi{
+    display: flex;
+    justify-content: center;
+    margin:20px;
+}
+.paymethods{
+    display: flex;;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+
